@@ -40,5 +40,8 @@ body {
 
 td:hover, th:hover {
   background-color: #f0f8ff;
-  transition: background 0.2s;
+  transform: scale(1.05);
+  transition: background 0.2s, transform 0.2s;
+  z-index: 1;
+  position: relative;
 }
