@@ -35,6 +35,10 @@ body {
     flex: 1;
     height: 100vh;
     background: #f5f5f5;
-    border-left: 1px solid #ccc;
   }
   
+
+td:hover, th:hover {
+  background-color: #f0f8ff;
+  transition: background 0.2s;
+}
