@@ -38,7 +38,7 @@ body {
   }
   
 
-td:hover, th:hover {
+section:hover {
   background-color: #f0f8ff;
   transform: scale(1.05);
   transition: background 0.2s, transform 0.2s;
