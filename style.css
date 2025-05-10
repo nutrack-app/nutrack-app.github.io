@@ -34,10 +34,5 @@ body {
   .spalte {
     flex: 1;
     height: 100vh;
-    padding: 1em;
-    background: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
   }
   
