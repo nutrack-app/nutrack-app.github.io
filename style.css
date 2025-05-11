@@ -199,6 +199,48 @@ p {
   }
 }
 
+@media (max-width: 500px) {
+  .tabbar-col.right .language {
+    display: flex;
+    align-items: center;
+  }
+  .flag-icon {
+    height: 16px;
+    width: auto;
+    margin-left: 2px;
+  }
+  .flag-icon:first-child {
+    margin-left: 0;
+  }
+  .tabbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    overflow-x: auto;
+    padding: 0 2px;
+    gap: 0;
+    grid-template-columns: none;
+  }
+  .tabbar-col,
+  .tabbar-col.center,
+  .tabbar-col.right {
+    min-width: 32px;
+    padding: 0;
+    justify-content: center;
+  }
+  .tabbar a, .tabbar-item {
+    font-size: 0.85em;
+    padding: 0;
+    margin: 0;
+  }
+  .tabbar-icon {
+    height: 22px;
+    width: 22px;
+  }
+}
+
 .spalte {
   position: relative;
   flex: 1;
