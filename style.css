@@ -140,7 +140,7 @@ p {
     max-width: 50%;
 }
   
-.dreispalten-layout {
+.column-layout {
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -149,7 +149,7 @@ p {
 }
 
 @media (max-width: 900px) {
-  .dreispalten-layout {
+  .column-layout {
     flex-direction: column;
   }
 }
@@ -159,15 +159,15 @@ p {
     font-size: 1.2em;
     padding: 0.5em 0.25em;
   }
-  .dreispalten-layout {
+  .column-layout {
     padding: 0;
     gap: 0.5em;
   }
-  .spalte {
-    padding: 0.5em 0.25em;
-    min-width: 0;
+  .column {
+    padding-left: 1em;
+    padding-right: 1em;
   }
-  .spalte h2 {
+  .column h2 {
     padding-top: 1.2em;
     font-size: 1.25em;
   }
@@ -200,6 +200,9 @@ p {
   .tabbar a, .tabbar-item {
     font-size: 0.95em;
     padding: 0 2px;
+  }
+  .column-layout {
+    padding-bottom: 56px;
   }
 }
 
@@ -245,13 +248,16 @@ p {
     width: 22px;
   }
 
-  .spalte {
+  .column {
     padding-left: 1em;
     padding-right: 1em;
   }
+  .column-layout {
+    padding-bottom: 56px;
+  }
 }
 
-.spalte {
+.column {
   position: relative;
   flex: 1;
   display: flex;
@@ -259,7 +265,7 @@ p {
   align-items: center;      
 }
 
-.spalte h2 {
+.column h2 {
   padding-top: 3em;
 }
   
