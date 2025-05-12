@@ -144,8 +144,8 @@ p {
   display: flex;
   flex: 1;
   flex-direction: row;
-  padding: 0;
   gap: 0;
+  padding-bottom: 56px;
 }
 
 @media (max-width: 900px) {
@@ -175,14 +175,18 @@ p {
     max-width: 100%;
     font-size: 1em;
     padding: 0 0.5em;
+    text-align: left;
+    word-break: break-word;
   }
   .privacy-content {
+    width: 100vw;
     max-width: 100vw;
-    padding: 16px 4px 16px 4px;
+    padding: 12px 8px 56px 8px;
     min-height: auto;
+    box-sizing: border-box;
   }
   .tabbar {
-    grid-template-columns: 1fr 80px 80px 80px 1fr;
+    grid-template-columns: 1fr 60px 60px 60px 1fr;
     height: 48px;
   }
   .tabbar-icon {
@@ -213,6 +217,7 @@ p {
     margin-left: 0;
   }
   .tabbar {
+    grid-template-columns: 1fr 60px 60px 60px 1fr;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -238,6 +243,11 @@ p {
   .tabbar-icon {
     height: 22px;
     width: 22px;
+  }
+
+  .spalte {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
@@ -275,7 +285,7 @@ section:hover {
 
 .tabbar {
   display: grid;
-  grid-template-columns: 1fr 120px 120px 120px 1fr;
+  grid-template-columns: 1fr 60px 60px 60px 1fr;
   align-items: center;
   height: 60px;
   position: fixed;
@@ -296,7 +306,7 @@ section:hover {
 .tabbar-col.center {
   justify-content: center;
   padding-left: 1em;
-  padding-right: 2.5em;
+  padding-right: 1em;
 }
 
 .tabbar-col.right {
@@ -351,10 +361,12 @@ section:hover {
   align-items: center;
   text-align: left;
   min-height: 80vh;
-  width: 100vw;
+  width: 100%;
   max-width: 700px;
-  margin: 0 auto 0 auto;
-  padding: 32px 16px 32px 16px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  padding-bottom: 56px;
+  box-sizing: border-box;
 }
 
 .tabbar-col.right .language a {

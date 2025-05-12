@@ -10,7 +10,6 @@ function loadLanguage() {
 function setLanguage(lang) {
   const t = translations[lang];
   if (!t) return;
-  // IDs und Typ der Übersetzung (innerText/innerHTML)
   const elements = [
         // index.html
     { id: 'h2App', prop: 'innerText', key: 'h2App' },
@@ -59,10 +58,8 @@ function getPreferredLanguage() {
   if (savedLang) {
     return savedLang;
   }
-  // Browsersprache holen (z.B. 'de-DE' oder 'en-US')
   const browserLang = navigator.language || navigator.userLanguage || 'en';
   const shortLang = browserLang.split('-')[0];
-  // Unterstützte Sprachen prüfen
   const supported = ['de', 'en'];
   const lang = supported.includes(shortLang) ? shortLang : 'en';
   localStorage.setItem('selectedLanguage', lang);
