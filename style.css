@@ -282,6 +282,9 @@ section:hover {
 .privacy-content h2 {
   text-align: center;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .tabbar-col.right .language a {
