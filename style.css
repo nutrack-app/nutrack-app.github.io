@@ -158,9 +158,6 @@ p {
   p {
     max-width: 90%;
   }
-  h2 {
-    align-self: center;
-  }
 }
 
 .column {
@@ -279,6 +276,12 @@ section:hover {
   padding: 32px 16px;
   padding-bottom: 56px;
   box-sizing: border-box;
+}
+
+.privacy-content h1,
+.privacy-content h2 {
+  text-align: center;
+  width: 100%;
 }
 
 .tabbar-col.right .language a {
