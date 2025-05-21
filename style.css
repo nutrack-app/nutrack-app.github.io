@@ -158,6 +158,9 @@ p {
   p {
     max-width: 90%;
   }
+  h2 {
+    align-self: center;
+  }
 }
 
 .column {
